@@ -21,13 +21,13 @@ def main():
     # --- TAB 2: YOUTUBE PLAYER ---
     with tab2:
         st.header("Stream YouTube Content")
-        yt_url = st.text_input("Paste YouTube URL here", placeholder="https://www.youtube.com/watch?v=...")
+        yt_url = st.text_input("https://youtu.be/XZdE-PX0iqQ?si=KgiccLnEX3yzYRpw")
         if yt_url:
             try:
                 st.video(yt_url)
                 st.caption("Now streaming from YouTube")
             except Exception as e:
-                st.error("Please enter a valid YouTube URL.")
+                st.error("https://youtu.be/XZdE-PX0iqQ?si=KgiccLnEX3yzYRpw")
 
     # --- TAB 3: PDF READER & AUDIO ---
     with tab3:
